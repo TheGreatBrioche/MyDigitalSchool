@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="StyleFormulaire.css">
+	<title> Formulaire Vacances </title>
+</head>
+
+<body>
+
+	<form>
+		<fieldset>
+
+			<img src="Images/GouvernementLogo.png" alt="Gouvernement">
+
+			<h1> OPÉRATION<br>TRANQUILLITÉ - VACANCES<br> -------- </h1>
+
+			<h2> DEMANDE INDIVIDUELLE </h2>
+
+
+			<fieldset>
+
+				En cas de retour inopiné ou de modification de la date et/ou de
+				la durée de vos congés, n'oubliez pas de prévenir votre commissarit de police ou votre
+				brigade de gendarmerie
+
+			</fieldset>
+			<br>
+
+
+			<fieldset>
+
+				<h3>DEMANDEUR</h3>
+
+				Nom (en capitales) : <input type="text" id="Nom" required>
+				Prénom : <input type="text" id="Prénom"><br><br>
+				Qualité : <input type="radio" name="qualite" value="particulier">Particulier
+				<input type="radio" name="qualite" value="commercant">Commerçant
+
+			</fieldset>
+			<br>
+
+
+			<fieldset>
+
+				<h3>ADRESSE</h3>
+
+				(N° - Voie - Lieu-dit,...) <input type="text" id="Lieu"><br><br>
+				Code Postal : <input type="text" id="CodePostal">
+				Ville : <input type="text" id="Ville">
+
+			</fieldset>
+			<br>
+
+
+			<fieldset>
+
+				<h3> PÉRIODE D'ABSENCE </h3>
+
+				Du : <input type="text" id="PeriodeDebut">
+				Au : <input type="text" id="PeriodeFin">
+
+			</fieldset>
+			<br>
+
+
+			<fieldset>
+
+				<h3> TYPE ET CARACTÉRISTIQUE DU DOMICILE OU DU COMMERCE </h3>
+
+				<input type="radio" name="domicile" value="Maison">Maison
+				<input type="radio" name="domicile" value="Appartement">Appartement
+				<input type="radio" name="domicile" value="Commerce">Commerce<br><br>
+
+				Etage : <input type="text" id="Etage">
+				N° de Porte : <input type="text" id="NumPorte">
+				Digicode : <input type="text" id="Digicode"><br><br>
+
+				Existence d'un dispositif d'alarme : <input type="radio" name="domicileqcm" value="Oui">Oui
+				<input type="radio" name="domicileqcm" value="Non">Non<br>
+				Si oui, lequel ? <input type="text" id="queldispositif">
+
+			</fieldset>
+			<br>
+
+
+			<fieldset>
+
+				<div class="container">
+					<div>
+						<h3> PERSONNE À AVISER EN CAS D'ANOMALIE </h3>
+
+						Nom : <input type="text" id="NomA">
+						Prénom : <input type="text" id="PrenomA"><br>
+						CP : <input type="text" id="CPA">
+						Ville : <input type="text" id="VilleA"><br><br>
+
+						☎ <input type="tel" id="TelephoneA"><br><br>
+						Possède-t-elle les clés : <input type="radio" name="anomalieqcm" value="Oui">Oui
+						<input type="radio" name="anomalieqcm" value="Non">Non<br>
+					</div>
+
+					<div class="a">
+						<h3> RENSEIGNEMENT PARTICULIERS </h3>
+
+						Lieu de vacances : <input type="text" id="VacancesP"><br><br>
+
+						Êtes-vous joignable pendant votre absence ? <input type="radio" name="absenceqcm"
+							value="Oui">Oui
+						<input type="radio" name="absenceqcm" value="Non">Non<br><br>
+
+						Si oui, à quelle adresse ? <input type="text" id="AdresseP"><br>
+						☎ <input type="tel" id="TelephoneP"><br>
+						Courriel : <input type="email" id="CourrielP"><br>
+					</div>
+				</div>
+
+
+			</fieldset>
+			<br>
+
+
+			<fieldset>
+
+				<h3> AUTRES RENSEIGNEMENTS À PRÉCISER </h3>
+
+				<input type="text" id="AutreRenseignements">
+
+			</fieldset>
+
+			<p>
+				Le déclarant certifie l'exactitude des renseignement mentionnée ci-dessus.<br>
+				Il déclare : "Je m'engage à aviser le commisariat de police ou la brigade de gendarmerie de tout
+				retour anticipé"<br><br>
+
+				Date: <input type="date" id="Date">
+				Signature du demandeur : <input type="file" id="avatar" name="avatar" accept="pdf/pdf">
+				<br><br><br>
+
+		</fieldset>
+		<br>
+		
+		<input type="submit" value="Envoyer" />
+		<input type="reset" value="Reinitialiser" />
+
+	</form>
+</body>
+
+</html>
