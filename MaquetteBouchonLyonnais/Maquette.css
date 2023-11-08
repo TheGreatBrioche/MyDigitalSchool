@@ -1,0 +1,203 @@
+/* BASE CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', 'Amatic SC', sans-serif;
+}
+
+p {
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+h1 {
+    font-family: 'Amatic SC', sans-serif;
+}
+
+h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* HEADER */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Img/lyon.webp);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 170px 0;
+}
+
+header h1 {
+    font-size: 80px;
+    padding: 20px 0;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+}
+
+header a {
+    color: white;
+    margin: 5px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+/* MAIN */
+/* INTRO */
+
+#intro {
+    display: flex;
+    align-items: center;
+}
+
+#intro img {
+    width: 400px;
+    margin: 40px;
+}
+
+/* PLATS */
+
+#plats h2 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+#plats h3 {
+    font-family: sans-serif;
+    font-size: 25px;
+    margin: 20px;
+}
+
+#plats ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#plats img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#plats ul li {
+    width: 450px;
+    height: 500px;
+    background-color: #F9F9F8;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgray;
+    padding: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+/* RESTAURANTS */
+
+#restaurants h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#restaurants ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#restaurants ul li {
+    padding: 50px;
+}
+
+#restaurants ul li img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#restaurants ul li p {
+    margin: 20px;
+}
+
+/* FOOTER */
+/* INFORMATIONS */
+
+footer {
+    background-color: #333333;
+    color: white;
+    padding-bottom: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer ul li {
+    margin: 30px;
+}
+
+#copyright {
+    text-align: center;
+    background-color: #222222;
+    padding: 30px;
+}
+
+/* SMARTPHONE */
+
+@media only screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    #intro {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    #plats ul {
+        flex-direction: column;
+    }
+
+    #plats ul li {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    #restaurants ul {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+}
