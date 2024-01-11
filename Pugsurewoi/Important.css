@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    margin: 10px;
+    font-size: 23px;
+}
+
+h1 {
+    font-size: 70px;
+    color: #eeb58c;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* HEADER */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/header.avif);
+    background-size: cover;
+    background-position: center;
+    padding: 300px 0;
+}
+
+header img {
+    width: 200px;
+    height: 30px;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+header nav a {
+    color: white;
+}
+
+/* MAIN */
+/* DEVISE */
+
+#devise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#devise p {
+    color: lightgray;
+}
+
+#devise img {
+    width: 1500px;
+}
+
+/* Margin right negatif pour superposer les deux images */
+/* z-index pour l'écriture soit au dessus de l'image */
+#devise .content {
+    margin-right: -1000px;
+    z-index: 1;
+}
+
+/* CHIENS */
+
+#chiens ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+#chiens .content {
+    margin-left: 40px;
+}
+
+#chiens a {
+    color: #eeb58c;
+}
+
+#chiens p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* utilisation d'un container pour que les images 
+rentre dans l'aspect ratio voulu */
+#chiens .container {
+    height: 100%;
+}
+
+#chiens img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer nav a {
+    color: lightgray;
+}
+
+footer p {
+    color: lightgray;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    body {
+        text-align: center;
+    }
+
+    header #navigation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header #navigation img {
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    #devise img {
+        margin-left: 400px;
+    }
+
+    #devise .content h1 {
+        font-size: 42px;
+    }
+
+    #devise .content {
+        text-align: left;
+        margin-left: 100px;
+    }
+
+    #chiens ul li {
+        flex-direction: column;
+    }
+
+    #chiens .content {
+        margin: 0;
+    }
+
+    footer #footercontent {
+        flex-direction: column;
+    }
+
+    footer  nav {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    footer img {
+        width: 150px;
+    }
+
+    footer nav a {
+        font-size: 17px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+}
